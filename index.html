@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+
         <title>FDN - Digital Skills</title>
-        
+
         <link rel="stylesheet" href="main.css" type="text/css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
-        
-        
+
         <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    
+
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-        
+
      <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   
+
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-        
+
     </head>
     <body>
-        
+
         <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
                 <img src="Bilder/Icon_Digitale_Nachhaltigkeit_Farbig.svg">
             </div>
-            
+
         <div role="navigation">
             <ul class="nav nav-pills">
                 <li role="presentation"><a data-toggle="tab" href="#home">Home</a></li>
+            </ul>
+            
+            <br>
+                
+                        <div class="content-section-header bg-light" id="digital-skills-1-nav-pills" data-toggle="collapse" data-target="#digital-skills-1-collapse" aria-expanded="true" aria-controls="digital-skills-1-collapse">
+                          <span><em>Digital Skills 1</em></span>
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="digital-skills-1-collapse" class="col-12 collapse show" aria-labelledby="digital-skills-1-nav-pills">
+                             <ul class="col-12 nav nav-pills">
                 <li role="presentation"><a data-toggle="tab" href="#a1">Aufgabe 1</a></li>
                 <li role="presentation"><a data-toggle="tab" href="#a2">Aufgabe 2</a></li>
                 <li role="presentation"><a data-toggle="tab" href="#a3">Aufgabe 3</a></li>
                 <li role="presentation"><a data-toggle="tab" href="#a4">Aufgabe 4</a></li>
                 <li role="presentation"><a data-toggle="tab" href="#a5">Aufgabe 5</a></li>
                 <li role="presentation"><a data-toggle="tab" href="#a6">Aufgabe 6</a></li>
+               
             </ul>
-        </div>
+                        </div>
            
+                    <br>
+                        <div class="content-section-header bg-light" id="digital-skills-2-nav-pills" data-toggle="collapse" data-target="#digital-skills-2-collapse" aria-expanded="true" aria-controls="digital-skills-2-collapse">
+                          <span><em>Digital Skills 2</em></span>
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="digital-skills-2-collapse" class="col-12 collapse show" aria-labelledby="digital-skills-2-nav-pills">
+                             <ul class="col-12 nav nav-pills">
+                <li role="presentation"><a data-toggle="tab" href="#a7">Aufgabe 1</a></li>
+                <li role="presentation"><a data-toggle="tab" href="#a8">Aufgabe 2</a></li>
+                <li role="presentation"><a data-toggle="tab" href="#a9">Aufgabe 3</a></li>
+                <li role="presentation"><a data-toggle="tab" href="#a10">Aufgabe 4</a></li>
+                <li role="presentation"><a data-toggle="tab" href="#a11">Aufgabe 5</a></li>
+                <li role="presentation"><a data-toggle="tab" href="#a12">Aufgabe 6</a></li>
+               
+            </ul>
+                        </div>
+           
+        </div>
+
         </nav>
 
         <!-- Page Content Holder -->
@@ -52,7 +87,7 @@
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
                 <div class="container-fluid">
-                    
+
                     <div>FDN - Digital Skills</div>
 
                     <button type="button" id="sidebarCollapse" class="navbar-btn">
@@ -63,42 +98,42 @@
 
                 </div>
             </nav>
-            
-            
+
+
             <div class="tab-content">
-                
+
                 <!-- Home -->
-                
+
                 <div id="home" class="tab-pane fade in active show">
                     <div class="content-section">
                         <h3>Willkommen im <br><em>Digital Skills Hackroom</em></h3>
                         
                         <br>
-                        
+
                         <p>
                             Unter den verschiedenen Menüpunkten findest du die Aufgaben für diesen Kurs. <br>
                             Jede Aufgabe enthält die benötigten Unterrichtsmaterialien und ein Beispiel zum Lösen der Aufgabe.
                             Damit du gleich beginnen kannst, haben wir dir schon im Ordner zwei leere Dokumente erstellt
                             <strong> (aufgabe.html, aufgabe.css) </strong>.
                         </p>
-                        
+
                         <p>Viel Spass und gutes Gelingen!</p>
-                        
-                        
+
+
                     </div>
-                
+
                 </div>
-                
-                
+
+
                 <!-- Aufgabe 1 -->
-                
-            
+
+
                 <div id="a1" class="tab-pane fade in">
                     <div class="content-section">
-                   
+
                         <div class="content-section-header bg-light" id="a1-headingOne" data-toggle="collapse" data-target="#a1-collapseOne" aria-expanded="true" aria-controls="a1-collapseOne">
                               <span>&lt;HTML&gt; Hypertext Markup Language - Teil 1</span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -107,8 +142,8 @@
 
                         <div id="a1-collapseOne" class="collapse show" aria-labelledby="a1-headingOne">
                           <div>
-                              Erstelle einen Text, welcher dein Lieblingstier beschreibt. 
-                              Versuche, dabei das Tier so gut wie möglich zu beschreiben, dass du dessen Namen nicht erwähnen musst. 
+                              Erstelle einen Text, welcher dein Lieblingstier beschreibt.
+                              Versuche, dabei das Tier so gut wie möglich zu beschreiben, dass du dessen Namen nicht erwähnen musst.
                               Der Text sollte aus Überschrift(en) und Paragraphen bestehen. Hebe wichtige Aspekte fett/kursiv hervor.
                               <br />
                               Platziere am Schluss ein Bild des Tieres, welches als Link auf dessen Wikipediaseite verweist.
@@ -125,7 +160,7 @@
                         </div>
                         <div id="a1-collapseTwo" class="collapse show" aria-labelledby="a1-headingTwo">
                           <div>
-                              
+
                               <ul class="video-list">
                                 <li class="btn btn-outline-dark nav-item active" video-id="RP-DZ2WmKWM">
                                     <span>1</span>
@@ -146,146 +181,146 @@
                                     <span>6</span>
                                 </li>
                               </ul>
-                              
+
                               <div class="iframe-container">
                                   <iframe class="video-player" width="420" height="550" src="https://www.youtube.com/embed/RP-DZ2WmKWM"></iframe>
                               </div>
-                              
-                              
+
+
                               <ul class="list-group">
-                              
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Überschriften</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;h1&gt;Meine Überschrift&lt;&sol;h1&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://wiki.selfhtml.org/wiki/HTML/Textstrukturierung/%C3%9Cberschrift">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Paragraphen</p>
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;p&gt;Mein Text&lt;&sol;p&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/html/html_paragraphs.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Fett</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;strong&gt;Text&lt;&sol;strong&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/html/html_formatting.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Kursiv</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;em&gt;Text&lt;&sol;em&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/html/html_formatting.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Bild</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;img src="Bildpfad" height="Höhe" width="Breite"&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/tags/tag_img.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
-                                  
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Link</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;a href="Link"&gt;Inhalt&lt;&sol;a&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/tags/tag_a.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
-                              
+
                               </ul>
                           </div>
                         </div>
                       </div>
-                    
+
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a1-headingThree" data-toggle="collapse" data-target="#a1-collapseThree" aria-expanded="true" aria-controls="a1-collapseThree">
                           <span>
                            Beispiel
                           </span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -296,22 +331,22 @@
                         </div>
                       </div>
                 </div>
-                
-                
+
+
                  <!-- Aufgabe 2 -->
-                
+
                  <div id="a2" class="tab-pane fade in">
                     <div class="content-section">
-                   
+
                         <div class="content-section-header bg-light" id="a2-headingOne" data-toggle="collapse" data-target="#a2-collapseOne" aria-expanded="true" aria-controls="a2-collapseOne">
                               <span>&lt;HTML&gt; Hypertext Markup Language - Teil 2</span>
                                 <div class="arrow active">
                                     <span></span>
                                     <span></span>
                                 </div>
-                               
-                            
-                           
+
+
+
                         </div>
 
                         <div id="a2-collapseOne" class="collapse show" aria-labelledby="a2-headingOne">
@@ -325,7 +360,7 @@
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a2-headingTwo" data-toggle="collapse" data-target="#a2-collapseTwo" aria-expanded="true" aria-controls="a2-collapseTwo">
                           <span>Lernmaterial</span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -333,7 +368,7 @@
                         </div>
                         <div id="a2-collapseTwo" class="collapse show" aria-labelledby="a2-headingTwo">
                           <div>
-                              
+
                               <ul class="video-list">
                                 <li class="btn btn-outline-dark nav-item active" video-id="7HVEZGJR6fs">
                                     <span>1</span>
@@ -345,159 +380,159 @@
                                     <span>3</span>
                                 </li>
                               </ul>
-                              
+
                               <div class="iframe-container">
-                              
+
                                 <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/7HVEZGJR6fs"></iframe>
-                                  
+
                               </div>
-                              
+
                               <ul class="list-group">
-                              
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Tabellen</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;table&gt;Inhalt&lt;&sol;table&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/html/html_tables.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
-                                  
+
+
                                    <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Tabellen-Zeile</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;tr&gt;Zeilen-Inhalt&lt;&sol;tr&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://wiki.selfhtml.org/wiki/HTML/Tabellen/Aufbau_einer_Tabelle">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Tabellen-Kopf-Element</p>
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;th&gt;Mein Text&lt;&sol;th&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/html/html_tables.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Tabellen-Daten</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;td&gt;Text&lt;&sol;td&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/tags/tag_td.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Ungeordnete Liste</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;ul&gt;Elemente&lt;&sol;ul&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Geordnete Liste</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;ol&gt;Elemente&lt;&sol;ol&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://html.com/lists/">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Listen-Elemente</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;li&gt;Text&lt;&sol;li&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/tags/tag_li.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
@@ -505,13 +540,13 @@
                           </div>
                         </div>
                       </div>
-                    
+
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a2-headingThree" data-toggle="collapse" data-target="#a2-collapseThree" aria-expanded="true" aria-controls="a2-collapseThree">
                           <span>
                            Beispiel
                           </span>
-                            
+
                          <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -522,18 +557,18 @@
                         </div>
                       </div>
                 </div>
-                
-                
-                
+
+
+
                  <!-- Aufgabe 3 -->
-                
-                
+
+
                  <div id="a3" class="tab-pane fade in">
                       <div class="content-section">
-                   
+
                         <div class="content-section-header bg-light" id="a3-headingOne" data-toggle="collapse" data-target="#a3-collapseOne" aria-expanded="true" aria-controls="a3-collapseOne">
                               <span>CSS Casscading Style Sheets - Teil 1 </span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -551,7 +586,7 @@
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a3-headingTwo" data-toggle="collapse" data-target="#a3-collapseTwo" aria-expanded="true" aria-controls="a3-collapseTwo">
                           <span>Lernmaterial</span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -559,7 +594,7 @@
                         </div>
                         <div id="a3-collapseTwo" class="collapse show" aria-labelledby="a3-headingTwo">
                           <div>
-                              
+
                               <ul class="video-list">
                                 <li class="btn btn-outline-dark nav-item active" video-id="hwS-HCxgaR8">
                                     <span>1</span>
@@ -585,109 +620,109 @@
                                    <li class="btn btn-outline-dark nav-item" video-id="L5CCno-2UqE">
                                     <span>8</span>
                                 </li>
-                                  
-                                  
-                                  
+
+
+
                               </ul>
                               <div class="iframe-container">
                               <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/hwS-HCxgaR8"></iframe>
                               </div>
                               <ul class="list-group">
-                                  
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-9">
                                         <p>Eine CSS Datei muss zunächst mit ihrem HTML Dokument verlinkt werden</p>
-                                        
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/css/css_howto.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                              
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Padding & Margin</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/css/css_boxmodel.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Border</p>
                                     </div>
                                     <div class="col-md-4">
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Link-Formatierung</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/css/css_link.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Text-Formatierung</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
-                                    
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/css/css_text.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
@@ -695,13 +730,13 @@
                           </div>
                         </div>
                       </div>
-                    
+
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a3-headingThree" data-toggle="collapse" data-target="#a3-collapseThree" aria-expanded="true" aria-controls="a3-collapseThree">
                           <span>
                            Beispiel
                           </span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -712,18 +747,18 @@
                         </div>
                       </div>
                 </div>
-                
-                
-                
+
+
+
                  <!-- Aufgabe 4 -->
-                
-                
+
+
                 <div id="a4" class="tab-pane fade in">
                       <div class="content-section">
-                   
+
                         <div class="content-section-header bg-light" id="a4-headingOne" data-toggle="collapse" data-target="#a4-collapseOne" aria-expanded="true" aria-controls="a4-collapseOne">
                               <span>CSS Cascading Style Sheets - Teil 2</span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -743,7 +778,7 @@
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a4-headingTwo" data-toggle="collapse" data-target="#a4-collapseTwo" aria-expanded="true" aria-controls="a4-collapseTwo">
                           <span>Lernmaterial</span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -751,7 +786,7 @@
                         </div>
                         <div id="a4-collapseTwo" class="collapse show" aria-labelledby="a4-headingTwo">
                           <div>
-                              
+
                               <ul class="video-list">
                                 <li class="btn btn-outline-dark nav-item active" video-id="1teAp6Mqptw">
                                     <span>1</span>
@@ -785,84 +820,84 @@
                               <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/1teAp6Mqptw"></iframe>
                               </div>
                               <ul class="list-group">
-                              
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Tabellen-Formatierung</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/css/css_table.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>ID & Klassen</p>
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://css-tricks.com/the-difference-between-id-and-class/">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Strukturierung</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <p>&lt;div&gt;Inhalt&lt;&sol;div&gt;</p>
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Positionierung</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://medium.freecodecamp.org/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
@@ -870,13 +905,13 @@
                           </div>
                         </div>
                       </div>
-                    
+
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a4-headingThree" data-toggle="collapse" data-target="#a4-collapseThree" aria-expanded="true" aria-controls="a4-collapseThree">
                           <span>
                            Beispiel
                           </span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -890,29 +925,29 @@
                         </div>
                       </div>
                 </div>
-                
-                
-                
+
+
+
                  <!-- Aufgabe 5 -->
-                
+
                 <div id="a5" class="tab-pane fade in">
                       <div class="content-section">
-                   
+
                         <div class="content-section-header bg-light" id="a5-headingOne" data-toggle="collapse" data-target="#a5-collapseOne" aria-expanded="true" aria-controls="a5-collapseOne">
                               <span>Bootstrap - Teil 1</span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
                                 </div>
-                            
-                            
+
+
                         </div>
 
                         <div id="a5-collapseOne" class="collapse show" aria-labelledby="a5-headingOne">
                           <div>
                               Gliedere deine Website mit hilfe des GitterSystems in unterschiedliche Bereiche ein. Dafür kannst du du deine bereits erstellten DIVs mit den Gitter Klassen (col-*-*) ausstatten.
-                              <br /> 
+                              <br />
                               Versuche dabei auch dein Design für verschiedene Bildschirmgrössen zu gestalten.
                               Style dannach deine Tabelle mithilfe den Bootstrap Klassen neu.
                           </div>
@@ -921,7 +956,7 @@
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a5-headingTwo" data-toggle="collapse" data-target="#a5-collapseTwo" aria-expanded="true" aria-controls="a5-collapseTwo">
                           <span>Lernmaterial</span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -929,7 +964,7 @@
                         </div>
                         <div id="a5-collapseTwo" class="collapse show" aria-labelledby="a5-headingTwo">
                           <div>
-                              
+
                               <ul class="video-list">
                                 <li class="btn btn-outline-dark nav-item active" video-id="DT1vr3ysplE">
                                     <span>1</span>
@@ -953,148 +988,148 @@
                                     <span>7</span>
                                 </li>
                               </ul>
-                              
+
                               <div class="iframe-container">
-                             
+
                               <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/DT1vr3ysplE"></iframe>
                                </div>
                               <ul class="list-group">
-                              
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Gitter System</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://getbootstrap.com/docs/4.3/layout/grid/">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Text</p>
                                     </div>
                                     <div class="col-md-4">
-                                        
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_typography.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Tabelle</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_tables.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Bild</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
-                                        
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_images.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Button</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_button_groups.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Glyphicons</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://fontawesome.com/v4.7.0/icon/bath">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
-                                  
+
                                 <li class="list-group-item">
                                     <div class="row">
                                     <div class="col-md-5">
                                         <p>Fortschrittsanzeige</p>
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://getbootstrap.com/docs/4.3/components/progress/">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
@@ -1102,48 +1137,48 @@
                           </div>
                         </div>
                       </div>
-                    
+
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a5-headingThree" data-toggle="collapse" data-target="#a5-collapseThree" aria-expanded="true" aria-controls="a5-collapseThree">
                           <span>
                            Beispiel
                           </span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
                                 </div>
                         </div>
                         <div id="a5-collapseThree" class="collapse show text-center" aria-labelledby="a5-headingThree">
-                            
+
                             <h5>Grosser Bildschirm</h5>
                             <img class="example-image" src="Bilder/beispiel_05_lg.png">
-                         
+
                             <h5>Mittlere Bildschirmgrösse</h5>
                             <video class="example-image" loop autoplay muted>
                                 <source src="Bilder/beispiel_05_md.mp4" type="video/mp4">
                                   Your browser does not support the video tag.
                             </video>
-                            
+
                             <h5>Kleine Bildschirmgrösse</h5>
                              <video class="example-image" loop autoplay muted>
                                 <source src="Bilder/beispiel_05_sm.mp4" type="video/mp4">
                                   Your browser does not support the video tag.
                             </video>
-                              
+
                         </div>
                       </div>
                 </div>
-                
-                
+
+
                  <!-- Aufgabe 6 -->
-                
+
                 <div id="a6" class="tab-pane fade in">
                       <div class="content-section">
-                   
+
                         <div class="content-section-header bg-light" id="a6-headingOne" data-toggle="collapse" data-target="#a6-collapseOne" aria-expanded="true" aria-controls="a6-collapseOne">
                               <span>Bootstrap - Teil 2</span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -1161,17 +1196,17 @@
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a6-headingTwo" data-toggle="collapse" data-target="#a6-collapseTwo" aria-expanded="true" aria-controls="a6-collapseTwo">
                           <span>Lernmaterial</span>
-                            
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
                                 </div>
-                            
-                            
+
+
                         </div>
                         <div id="a6-collapseTwo" class="collapse show" aria-labelledby="a6-headingTwo">
                           <div>
-                              
+
                               <ul class="video-list">
                                 <li class="btn btn-outline-dark nav-item active" video-id="O1tX3uTQWQo">
                                     <span>1</span>
@@ -1195,87 +1230,87 @@
                                     <span>7</span>
                                 </li>
                               </ul>
-                              
+
                               <div class="iframe-container">
                               <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/O1tX3uTQWQo"></iframe>
                               </div>
                               <ul class="list-group">
-                              
+
                                 <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Liste</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_list_groups.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Karten</p>
                                     </div>
                                     <div class="col-md-4">
-                                        
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_cards.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Zusammenklappen</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
-                                    
-                                        
+
+
                                     </div>
-                                  
-                                  
+
+
                                 </li>
-                                  
-                                  
+
+
                                  <li class="list-group-item">
                                     <div class="row">
-                                    
+
                                     <div class="col-md-5">
                                         <p>Karussell</p>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                     </div>
-                                        
+
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp">
-                                            <button class="btn btn-outline-dark" >Mehr</button></a>    
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
                                 </li>
@@ -1283,13 +1318,1230 @@
                           </div>
                         </div>
                       </div>
-                    
+
                       <div class="content-section">
                         <div class="content-section-header bg-light" id="a6-headingThree" data-toggle="collapse" data-target="#a6-collapseThree" aria-expanded="true" aria-controls="a6-collapseThree">
                           <span>
                            Beispiel
                           </span>
-                            
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a6-collapseThree" class="collapse show" aria-labelledby="a6-headingThree">
+                          <video class="example-image" loop autoplay muted>
+                                <source src="Bilder/beispiel_06.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                            </video>
+                        </div>
+                      </div>
+                </div>
+
+            
+
+               
+                <!-- Aufgabe 7 -->
+
+
+                <div id="a7" class="tab-pane fade in">
+                    <div class="content-section">
+
+                        <div class="content-section-header bg-light" id="a7-headingOne" data-toggle="collapse" data-target="#a7-collapseOne" aria-expanded="true" aria-controls="a7-collapseOne">
+                              <span>&lt;HTML&gt; Hypertext Markup Language - Teil 1</span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+
+                        <div id="a7-collapseOne" class="collapse show" aria-labelledby="a7-headingOne">
+                          <div>
+                              Erstelle einen Text, welcher dein Lieblingstier beschreibt.
+                              Versuche, dabei das Tier so gut wie möglich zu beschreiben, dass du dessen Namen nicht erwähnen musst.
+                              Der Text sollte aus Überschrift(en) und Paragraphen bestehen. Hebe wichtige Aspekte fett/kursiv hervor.
+                              <br />
+                              Platziere am Schluss ein Bild des Tieres, welches als Link auf dessen Wikipediaseite verweist.
+                          </div>
+                        </div>
+                     </div>
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a7-headingTwo" data-toggle="collapse" data-target="#a7-collapseTwo" aria-expanded="true" aria-controls="a7-collapseTwo">
+                          <span>Lernmaterial</span>
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a7-collapseTwo" class="collapse show" aria-labelledby="a7-headingTwo">
+                          <div>
+
+                              <ul class="video-list">
+                                <li class="btn btn-outline-dark nav-item active" video-id="RP-DZ2WmKWM">
+                                    <span>1</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="2dh_YQl9JHE">
+                                    <span>2</span>
+                                </li>
+                                <li class=" btn btn-outline-dark nav-item" video-id="eFYrNMBLhP4">
+                                    <span>3</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="F7zsLqT_tNM">
+                                    <span>4</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="Qk4bRKNzcvs">
+                                    <span>5</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="iTuIMRv3Drc">
+                                    <span>6</span>
+                                </li>
+                              </ul>
+
+                              <div class="iframe-container">
+                                  <iframe class="video-player" width="420" height="550" src="https://www.youtube.com/embed/RP-DZ2WmKWM"></iframe>
+                              </div>
+
+
+                              <ul class="list-group">
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Überschriften</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;h1&gt;Meine Überschrift&lt;&sol;h1&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://wiki.selfhtml.org/wiki/HTML/Textstrukturierung/%C3%9Cberschrift">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Paragraphen</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;p&gt;Mein Text&lt;&sol;p&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/html/html_paragraphs.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Fett</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;strong&gt;Text&lt;&sol;strong&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/html/html_formatting.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Kursiv</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;em&gt;Text&lt;&sol;em&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/html/html_formatting.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Bild</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;img src="Bildpfad" height="Höhe" width="Breite"&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/tags/tag_img.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Link</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;a href="Link"&gt;Inhalt&lt;&sol;a&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/tags/tag_a.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a7-headingThree" data-toggle="collapse" data-target="#a7-collapseThree" aria-expanded="true" aria-controls="a7-collapseThree">
+                          <span>
+                           Beispiel
+                          </span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a7-collapseThree" class="collapse show" aria-labelledby="a7-headingThree">
+                              <img class="example-image" src="Bilder/beispiel_01.png">
+                        </div>
+                      </div>
+                </div>
+
+
+                 <!-- Aufgabe 8 -->
+
+                 <div id="a2" class="tab-pane fade in">
+                    <div class="content-section">
+
+                        <div class="content-section-header bg-light" id="a2-headingOne" data-toggle="collapse" data-target="#a2-collapseOne" aria-expanded="true" aria-controls="a2-collapseOne">
+                              <span>&lt;HTML&gt; Hypertext Markup Language - Teil 2</span>
+                                <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+
+
+                        </div>
+
+                        <div id="a2-collapseOne" class="collapse show" aria-labelledby="a2-headingOne">
+                          <div>
+                              Erstelle eine Liste mit Eigenschaften, die ein Tier erfüllen kann.
+                              Erstelle eine Tabelle, welche dein Lieblingstier mit anderen Tieren vergleicht, benutze dabei 3-4 Eigenschaften deiner Liste.
+                              Erstelle aufgrund der Tabelle ein Ranking der verglichenen Tiere.
+                          </div>
+                        </div>
+                     </div>
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a2-headingTwo" data-toggle="collapse" data-target="#a2-collapseTwo" aria-expanded="true" aria-controls="a2-collapseTwo">
+                          <span>Lernmaterial</span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a2-collapseTwo" class="collapse show" aria-labelledby="a2-headingTwo">
+                          <div>
+
+                              <ul class="video-list">
+                                <li class="btn btn-outline-dark nav-item active" video-id="7HVEZGJR6fs">
+                                    <span>1</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="-PUI01BWiKk">
+                                    <span>2</span>
+                                </li>
+                                <li class=" btn btn-outline-dark nav-item" video-id="vF3gH45RT4g">
+                                    <span>3</span>
+                                </li>
+                              </ul>
+
+                              <div class="iframe-container">
+
+                                <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/7HVEZGJR6fs"></iframe>
+
+                              </div>
+
+                              <ul class="list-group">
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Tabellen</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;table&gt;Inhalt&lt;&sol;table&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/html/html_tables.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+
+                                   <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Tabellen-Zeile</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;tr&gt;Zeilen-Inhalt&lt;&sol;tr&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://wiki.selfhtml.org/wiki/HTML/Tabellen/Aufbau_einer_Tabelle">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Tabellen-Kopf-Element</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;th&gt;Mein Text&lt;&sol;th&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/html/html_tables.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Tabellen-Daten</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;td&gt;Text&lt;&sol;td&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/tags/tag_td.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Ungeordnete Liste</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;ul&gt;Elemente&lt;&sol;ul&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Geordnete Liste</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;ol&gt;Elemente&lt;&sol;ol&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://html.com/lists/">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Listen-Elemente</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;li&gt;Text&lt;&sol;li&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/tags/tag_li.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a2-headingThree" data-toggle="collapse" data-target="#a2-collapseThree" aria-expanded="true" aria-controls="a2-collapseThree">
+                          <span>
+                           Beispiel
+                          </span>
+
+                         <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a2-collapseThree" class="collapse show" aria-labelledby="a2-headingThree">
+                              <img class="example-image" src="Bilder/beispiel_02.png">
+                        </div>
+                      </div>
+                </div>
+
+
+
+                 <!-- Aufgabe 3 -->
+
+
+                 <div id="a3" class="tab-pane fade in">
+                      <div class="content-section">
+
+                        <div class="content-section-header bg-light" id="a3-headingOne" data-toggle="collapse" data-target="#a3-collapseOne" aria-expanded="true" aria-controls="a3-collapseOne">
+                              <span>CSS Casscading Style Sheets - Teil 1 </span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+
+                        <div id="a3-collapseOne" class="collapse show" aria-labelledby="a3-headingOne">
+                          <div>
+                              Style deinen Text aus Aufgabe 1 neu, indem du den verschiedenen Tags Attribute gibst. Füge auch neue Links ein und style diese nach deinem Wunsch.
+                              Versuche eine neue Schriftart einzustellen.
+                              Gebe deinem body-tag sowie deinen paragraph-tags verschiedene Hintergrundfarben. Spiele mit den padding/border/margin-Attribute und beschreibe in einem HTML-Kommentar die Unterschiede der einzelnen Attribute.
+                          </div>
+                        </div>
+                     </div>
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a3-headingTwo" data-toggle="collapse" data-target="#a3-collapseTwo" aria-expanded="true" aria-controls="a3-collapseTwo">
+                          <span>Lernmaterial</span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a3-collapseTwo" class="collapse show" aria-labelledby="a3-headingTwo">
+                          <div>
+
+                              <ul class="video-list">
+                                <li class="btn btn-outline-dark nav-item active" video-id="hwS-HCxgaR8">
+                                    <span>1</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="b34sWj0KbW4">
+                                    <span>2</span>
+                                </li>
+                                <li class=" btn btn-outline-dark nav-item" video-id="ur_8xrIsNJg">
+                                    <span>3</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="Sy9NBRh673Y">
+                                    <span>4</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="vh-TTlkKGKc">
+                                    <span>5</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="TxofRZS3KTA">
+                                    <span>6</span>
+                                </li>
+                                   <li class="btn btn-outline-dark nav-item" video-id="gEyhlVbBVJk">
+                                    <span>7</span>
+                                </li>
+                                   <li class="btn btn-outline-dark nav-item" video-id="L5CCno-2UqE">
+                                    <span>8</span>
+                                </li>
+
+
+
+                              </ul>
+                              <div class="iframe-container">
+                              <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/hwS-HCxgaR8"></iframe>
+                              </div>
+                              <ul class="list-group">
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-9">
+                                        <p>Eine CSS Datei muss zunächst mit ihrem HTML Dokument verlinkt werden</p>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/css/css_howto.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Padding & Margin</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/css/css_boxmodel.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Border</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Link-Formatierung</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/css/css_link.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Text-Formatierung</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/css/css_text.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a3-headingThree" data-toggle="collapse" data-target="#a3-collapseThree" aria-expanded="true" aria-controls="a3-collapseThree">
+                          <span>
+                           Beispiel
+                          </span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a3-collapseThree" class="collapse show" aria-labelledby="a3-headingThree">
+                            <img class="example-image" src="Bilder/beispiel_03.png">
+                        </div>
+                      </div>
+                </div>
+
+
+
+                 <!-- Aufgabe 4 -->
+
+
+                <div id="a4" class="tab-pane fade in">
+                      <div class="content-section">
+
+                        <div class="content-section-header bg-light" id="a4-headingOne" data-toggle="collapse" data-target="#a4-collapseOne" aria-expanded="true" aria-controls="a4-collapseOne">
+                              <span>CSS Cascading Style Sheets - Teil 2</span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+
+                        <div id="a4-collapseOne" class="collapse show" aria-labelledby="a4-headingOne">
+                          <div>
+                             Style deine Tabelle mit Farben/Border/Padding etc. nach deinen Wünschen.
+                              Erstelle eine Werbung, welche immer am gleichen Ort angezeigt wird, egal wie weit man auf der Seite herunterscrollt.
+                              Gebe deinem Bild eine relative/absolute Positionierung und verschiebe es auf der Seite herum. Beschreibe in einem HTML-Kommentar der Unterschied der beiden Attribute.
+                              Unterteile deine gesamte bisherige Seite in DIVs (Divisions). Dabei sollten jeweils alle Teile, die inhaltlich zusammengehören im selben DIV platziert werden. DIVs können auch verschachtelt werden.
+                              Gebe allen DIVs, die gleich gestylt werden sollen jeweils dieselbe Klasse. Gebe DIVs, die spezifisch gestylt werden sollen eine ID. Gebe allen Klassen und IDs verschiedene Attribute.
+                          </div>
+                        </div>
+                     </div>
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a4-headingTwo" data-toggle="collapse" data-target="#a4-collapseTwo" aria-expanded="true" aria-controls="a4-collapseTwo">
+                          <span>Lernmaterial</span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a4-collapseTwo" class="collapse show" aria-labelledby="a4-headingTwo">
+                          <div>
+
+                              <ul class="video-list">
+                                <li class="btn btn-outline-dark nav-item active" video-id="1teAp6Mqptw">
+                                    <span>1</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="gmgx3YjICMk">
+                                    <span>2</span>
+                                </li>
+                                <li class=" btn btn-outline-dark nav-item" video-id="NyZNze1h6jA">
+                                    <span>3</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="O2OBV6-Jflg">
+                                    <span>4</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="9JyUEe39H1Y">
+                                    <span>5</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="C5uQECHUiJ8">
+                                    <span>6</span>
+                                </li>
+                                 <li class="btn btn-outline-dark nav-item" video-id="xk7C34KPhIg">
+                                    <span>7</span>
+                                </li>
+                                <li class=" btn btn-outline-dark nav-item" video-id="gIANIG2HvMg">
+                                    <span>8</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="smKzjrNrBoo">
+                                    <span>9</span>
+                                </li>
+                              </ul>
+                              <div class="iframe-container">
+                              <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/1teAp6Mqptw"></iframe>
+                              </div>
+                              <ul class="list-group">
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Tabellen-Formatierung</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/css/css_table.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>ID & Klassen</p>
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://css-tricks.com/the-difference-between-id-and-class/">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Strukturierung</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>&lt;div&gt;Inhalt&lt;&sol;div&gt;</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Positionierung</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://medium.freecodecamp.org/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a4-headingThree" data-toggle="collapse" data-target="#a4-collapseThree" aria-expanded="true" aria-controls="a4-collapseThree">
+                          <span>
+                           Beispiel
+                          </span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a4-collapseThree" class="collapse show" aria-labelledby="a4-headingThree">
+                              <video class="example-image" loop autoplay muted>
+                                <source src="Bilder/beispiel_04.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                            </video>
+                        </div>
+                      </div>
+                </div>
+
+
+
+                 <!-- Aufgabe 5 -->
+
+                <div id="a5" class="tab-pane fade in">
+                      <div class="content-section">
+
+                        <div class="content-section-header bg-light" id="a5-headingOne" data-toggle="collapse" data-target="#a5-collapseOne" aria-expanded="true" aria-controls="a5-collapseOne">
+                              <span>Bootstrap - Teil 1</span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+
+                        </div>
+
+                        <div id="a5-collapseOne" class="collapse show" aria-labelledby="a5-headingOne">
+                          <div>
+                              Gliedere deine Website mit hilfe des GitterSystems in unterschiedliche Bereiche ein. Dafür kannst du du deine bereits erstellten DIVs mit den Gitter Klassen (col-*-*) ausstatten.
+                              <br />
+                              Versuche dabei auch dein Design für verschiedene Bildschirmgrössen zu gestalten.
+                              Style dannach deine Tabelle mithilfe den Bootstrap Klassen neu.
+                          </div>
+                        </div>
+                     </div>
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a5-headingTwo" data-toggle="collapse" data-target="#a5-collapseTwo" aria-expanded="true" aria-controls="a5-collapseTwo">
+                          <span>Lernmaterial</span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a5-collapseTwo" class="collapse show" aria-labelledby="a5-headingTwo">
+                          <div>
+
+                              <ul class="video-list">
+                                <li class="btn btn-outline-dark nav-item active" video-id="DT1vr3ysplE">
+                                    <span>1</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="Hx0bL3vojYc">
+                                    <span>2</span>
+                                </li>
+                                <li class=" btn btn-outline-dark nav-item" video-id="IFUBTnS71zg">
+                                    <span>3</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="jGsV7L9fIGU">
+                                    <span>4</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="bVBTzIr49ko">
+                                    <span>5</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="YwaP4H0CHpY">
+                                    <span>6</span>
+                                </li>
+                                 <li class="btn btn-outline-dark nav-item" video-id="Xp6fT0U4P8M">
+                                    <span>7</span>
+                                </li>
+                              </ul>
+
+                              <div class="iframe-container">
+
+                              <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/DT1vr3ysplE"></iframe>
+                               </div>
+                              <ul class="list-group">
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Gitter System</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://getbootstrap.com/docs/4.3/layout/grid/">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Text</p>
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_typography.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Tabelle</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_tables.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Bild</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_images.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Button</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_button_groups.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Glyphicons</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://fontawesome.com/v4.7.0/icon/bath">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                    <div class="col-md-5">
+                                        <p>Fortschrittsanzeige</p>
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://getbootstrap.com/docs/4.3/components/progress/">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a5-headingThree" data-toggle="collapse" data-target="#a5-collapseThree" aria-expanded="true" aria-controls="a5-collapseThree">
+                          <span>
+                           Beispiel
+                          </span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                        <div id="a5-collapseThree" class="collapse show text-center" aria-labelledby="a5-headingThree">
+
+                            <h5>Grosser Bildschirm</h5>
+                            <img class="example-image" src="Bilder/beispiel_05_lg.png">
+
+                            <h5>Mittlere Bildschirmgrösse</h5>
+                            <video class="example-image" loop autoplay muted>
+                                <source src="Bilder/beispiel_05_md.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                            </video>
+
+                            <h5>Kleine Bildschirmgrösse</h5>
+                             <video class="example-image" loop autoplay muted>
+                                <source src="Bilder/beispiel_05_sm.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                            </video>
+
+                        </div>
+                      </div>
+                </div>
+
+
+                 <!-- Aufgabe 6 -->
+
+                <div id="a6" class="tab-pane fade in">
+                      <div class="content-section">
+
+                        <div class="content-section-header bg-light" id="a6-headingOne" data-toggle="collapse" data-target="#a6-collapseOne" aria-expanded="true" aria-controls="a6-collapseOne">
+                              <span>Bootstrap - Teil 2</span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+
+                        <div id="a6-collapseOne" class="collapse show" aria-labelledby="a6-headingOne">
+                          <div>
+                            Erweitere deine Seite nun mit den Bootstrap Klassen.
+                            Beginne mit deinen Listen und wähle weitere Bootstrap Elemente aus.
+                            Denke daran, dass du bereits bestehende Boostrap-CSS Klassen erweitern oder auch überschreiben kannst.
+                          </div>
+                        </div>
+                     </div>
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a6-headingTwo" data-toggle="collapse" data-target="#a6-collapseTwo" aria-expanded="true" aria-controls="a6-collapseTwo">
+                          <span>Lernmaterial</span>
+
+                             <div class="arrow active">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+
+                        </div>
+                        <div id="a6-collapseTwo" class="collapse show" aria-labelledby="a6-headingTwo">
+                          <div>
+
+                              <ul class="video-list">
+                                <li class="btn btn-outline-dark nav-item active" video-id="O1tX3uTQWQo">
+                                    <span>1</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="W08G7VZ0ooY">
+                                    <span>2</span>
+                                </li>
+                                <li class=" btn btn-outline-dark nav-item" video-id="kX8S0MN93kM">
+                                    <span>3</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="0qKSi8_MIvY">
+                                    <span>4</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="4mouJ1oUIGw">
+                                    <span>5</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="bwzK2Sor8q4">
+                                    <span>6</span>
+                                </li>
+                                <li class="btn btn-outline-dark nav-item" video-id="NwDYF4uldUU">
+                                    <span>7</span>
+                                </li>
+                              </ul>
+
+                              <div class="iframe-container">
+                              <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/O1tX3uTQWQo"></iframe>
+                              </div>
+                              <ul class="list-group">
+
+                                <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Liste</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_list_groups.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Karten</p>
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_cards.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Zusammenklappen</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Karussell</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content-section">
+                        <div class="content-section-header bg-light" id="a6-headingThree" data-toggle="collapse" data-target="#a6-collapseThree" aria-expanded="true" aria-controls="a6-collapseThree">
+                          <span>
+                           Beispiel
+                          </span>
+
                              <div class="arrow active">
                                     <span></span>
                                     <span></span>
@@ -1305,7 +2557,6 @@
                 </div>
                 
             </div>
-        </div>
     </div>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -1315,25 +2566,25 @@
             });
         });
     </script>
-        
+
     <script>
     jQuery(document).ready(function(){
-        
+
         jQuery('.video-list li').on('click',function () {
-            
+
             jQuery(this).parent().children('li').removeClass('active');
             jQuery(this).addClass('active');
-            
+
             var videoId = jQuery(this).attr('video-id');
             var videoUrl = 'https://www.youtube.com/embed/'+videoId;
-            
+
             jQuery(this).closest('.content-section').find('iframe').attr('src', videoUrl);
 
         });
     });
 </script>
-       
-    
+
+
 </body>
-    
+
 </html>

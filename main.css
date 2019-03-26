@@ -124,6 +124,10 @@ p {
     transition-delay: 0.2s;
 }
 
+div span {
+    color: black;
+}
+
 #sidebarCollapse span:first-of-type {
     transform: rotate(45deg) translate(2px, 2px);
 }
