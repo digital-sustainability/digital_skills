@@ -1360,7 +1360,7 @@
                           <div>
                               Erstelle zuerst drei Dokumente: HTML, CSS, JS und verknüpfe diese untereinander.
                               Erstelle dann in deinem HTML-Dokument ein Formular mit einem Inputtextfeld und einem Submit-Knopf. Auf submit soll der Text aus dem Inputfeld als alert angezeigt werden.
-                              Um das Formular im onsubmit-Attribut mitzugeben muss es der Funktion als Parameter "this" mitgegeben werden. Die einzelnen Inputfelder können dann über deren name-Attribut abgerufen werden: this.name.value.
+                              Das gesamte Formular kann der in "onsubmit" definierten Funktion als Parameter "this" mitgegeben werden (bspw.: onsubmit="myFunction(this)"). Die einzelnen Inputfelder können dann über deren jeweiliges name-Attribut abgerufen werden: this.name.value.
                           </div>
                         </div>
                      </div>
@@ -1403,8 +1403,29 @@
                                   <iframe class="video-player" width="420" height="550" src="https://www.youtube.com/embed/o40dGRLBl7A"></iframe>
                               </div>
 
-
                               <ul class="list-group">
+                                  
+                                  
+                                  <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>JavaScript-Dokument mit HTML verbinden</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.html-seminar.de/javascript-auslagern.htm">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
                                   
                                   <li class="list-group-item">
                                     <div class="row">
@@ -1435,7 +1456,6 @@
 
                                     </div>
                                     <div class="col-md-4">
-                                        <p>alert("Hello World!")</p>
                                     </div>
 
                                     <div class="col-md-3">
@@ -1541,11 +1561,13 @@
 
                         <div id="a2-collapseOne" class="collapse show" aria-labelledby="a2-headingOne">
                           <div>
-                              Schreibe 3 JavaScript-Funktionen, die jeweils einen String über console.log, alert, oder document.write ausgeben. Deine Submit-Funktion aus Aufgabe 1 sollte nun alle drei dieser Funktionen ausführen.
+                              <ul>
+                              <li>Schreibe 3 JavaScript-Funktionen, die jeweils einen String über console.log, alert, oder document.write ausgeben. Deine Submit-Funktion aus Aufgabe 1 sollte nun alle drei dieser Funktionen ausführen.</li>
                               
-                              Implementiere einen Counter, der zählt wie oft der Submit-Knopf geklickt wird und jeweils nach jedem Knopfdruck die neue Zahl ausgibt.
+                              <li>Implementiere einen Counter, der zählt wie oft der Submit-Knopf geklickt wird und jeweils nach jedem Knopfdruck die neue Zahl ausgibt.</li>
                               
-                              Implementiere dann eine Funktion, die einen Zahleninput nimmt und dann die gewählte Anzahl einer von dir gewählten Mathematischen Reihe nacheinander ausgibt (Siehe Link unten).
+                              <li>Implementiere eine Funktion, die einen Zahleninput nimmt und dann die gewählte Anzahl einer von dir gewählten Mathematischen Reihe nacheinander ausgibt.</li>
+                            </ul>
                           </div>
                         </div>
                      </div>
@@ -1605,6 +1627,22 @@
 
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/js/js_arithmetic.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+                                    </div>
+                                </li>
+                                  
+                                  <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Lokale und globale Variablen</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/js/js_scope.asp">
                                             <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
                                     </div>
@@ -1671,9 +1709,10 @@
 
                         <div id="a3-collapseOne" class="collapse show" aria-labelledby="a3-headingOne">
                           <div>
-                              Erstelle ein Objekt zu einer Tabelle auf der <a href="http://ws-old.parlament.ch/votes/councillors">Parlamentarierseite</a>. Das Objekt sollte eine Funktion haben, die zurückgibt ob es sich beim Parlamentarier um einen Ständerat handelt. Style alle Ständeräte in einer Farbe und alle Nationalräte in einer anderen Farbe.
-                              Wähle fünf deiner Lieblingskantone und schreibe eine Funktion, die jeweils die Parlamentarier anders stylt, je nachdem in welchem Kanton sie wohnen, und ihnen einen Default-Style gibt, falls sie nicht in einem deiner Lieblingskantone wohnen.
-                              Erstelle ein Formular, das jeweils auf Submit ein Parlamentarier-Objekt erstellt und die oben genannten Funktionen überprüft.
+                              Erstelle ein Objekt, welches dieselben Eigenschaften wie die Tabelle auf der <a href="http://ws-old.parlament.ch/councillors/basicdetails">Parlamentarierseite</a> hat. Das Objekt sollte eine Funktion haben, die zurückgibt ob es sich beim Parlamentarier um einen Ständerat handelt. Style alle Ständeräte in einer Farbe und alle Nationalräte in einer anderen Farbe (Siehe unten, wie du ein deiner Homepage mit JavaScript ein neues Element hinzufügen und stylen kannst).
+                              <br>
+                              Wähle vier deiner Lieblingskantone und schreibe eine Funktion, die jeweils die Parlamentarier anders stylt, je nachdem in welchem Kanton sie wohnen, und ihnen einen Default-Style gibt, falls sie nicht in einem deiner Lieblingskantone wohnen.
+                              Erstelle ein Formular, das jeweils auf Submit ein Parlamentarier-Objekt erstellt, die oben genannten Funktionen überprüft und das Objekt ausgibt.
                           </div>
                         </div>
                      </div>
@@ -1722,7 +1761,51 @@
                               <iframe class="video-player" width="420" height="315" src="https://www.youtube.com/embed/MJ56ikJ1pJA"></iframe>
                               </div>
                               <ul class="list-group">
+                                  
+                                  <li class="list-group-item">
+                                    <div class="row">
 
+                                    <div class="col-md-5">
+                                        <p>Der Homepage ein neues HTML-Element hinzufügen</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/jsref/met_node_appendchild.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+                                  
+                                  <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Ein HTML-Element über JavaScript stylen</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/jsref/prop_html_style.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+                                  
                                 <li class="list-group-item">
                                     <div class="row">
 
@@ -1846,7 +1929,7 @@
 
                         <div id="a4-collapseOne" class="collapse show" aria-labelledby="a4-headingOne">
                           <div>
-                              Zu jedem erstellten Objekt soll jeweils das Erstelldatum hinzugefügt und das ganze Objekt in einem Array gespeichert werden. Das Array darf höchstens eine gewisse (von dir gewählte) Länge haben und der älteste Beitrag jeweils beim Überschreiten der Länge gelöscht werden, bevor der neuste Beitrag hinzugefügt wird.
+                              Zu jedem erstellten Objekt soll jeweils das Erstelldatum hinzugefügt und das ganze Objekt in einem Array gespeichert werden. Das Array darf höchstens eine gewisse (von dir gewählte) Länge haben und der älteste Beitrag soll jeweils beim Überschreiten der Länge gelöscht werden, bevor der neuste Beitrag hinzugefügt wird.
                               Gebe zuerst das ganze Array aus und dann einen zufälligen Eintrag davon.
                           </div>
                         </div>
@@ -1992,13 +2075,12 @@
                                     <span></span>
                                 </div>
 
-
                         </div>
 
                         <div id="a5-collapseOne" class="collapse show" aria-labelledby="a5-headingOne">
                           <div>
-                              <a href="https://www.w3schools.com/jsref/met_node_appendchild.asp">Lies nach</a>, wie neue Objekte dem DOM hinzugefügt werden können.
-                              Füge alle Elemente des Array dem DOM hinzu. Dafür musst du dem Objekt eine toString()-Methode hinzufügen, dass das Objekt schön darstellt. Beim Erstellen eines neuen Objekts sollte das Objekt mit einem fadeIn Effekt dem DOM hinzugefügt werden.
+                              Lies unten nach, wie mit jQuery neue Objekte dem DOM hinzugefügt werden können.
+                              Füge alle Elemente des Array dem DOM hinzu. Dafür musst du dem Objekt eine toString()-Methode hinzufügen, die das Objekt schön darstellt. Beim Erstellen eines neuen Objekts sollte das Objekt mit einem fadeIn Effekt dem DOM hinzugefügt werden. Das älteste Objekt, das aus dem Array gelöscht wird, sollte auch mit einem Effekt aus dem DOM entfernt werden. (Du kannst den neu erstellen Elementen mit <a href="https://www.w3schools.com/jquery/html_attr.asp">attr()</a> eine Klasse oder einmalige ID geben, um sie wiederzufinden)
                           </div>
                         </div>
                      </div>
@@ -2047,6 +2129,27 @@
 
                                     <div class="col-md-3">
                                         <a target="_blank" href="https://www.w3schools.com/jquery/jquery_get_started.asp">
+                                            <button class="btn btn-outline-dark" >Mehr</button></a>
+                                    </div>
+
+
+                                    </div>
+
+
+                                </li>
+                                  
+                                  <li class="list-group-item">
+                                    <div class="row">
+
+                                    <div class="col-md-5">
+                                        <p>Neue HTML-Elemente dem DOM hinzufügen</p>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a target="_blank" href="https://www.w3schools.com/jquery/jquery_dom_add.asp">
                                             <button class="btn btn-outline-dark" >Mehr</button></a>
                                     </div>
 
@@ -2158,7 +2261,7 @@
 
                         <div id="a6-collapseOne" class="collapse show" aria-labelledby="a6-headingOne">
                           <div>
-                              Erstelle eine Funktion, die deine Objekte in einen String umwandelt, der dann per AJAX-Request einen Eintrag auf der Parlamentarierseite abrufen kann. Die AJAX-Methode sollte dir einen JSON-String zurückgeben, stelle diesen dann entsprechend auf deinem DOM dar.
+                              Erstelle eine Funktion, die deine Objekte in einen String umwandelt, der dann per AJAX-Request einen Eintrag auf der Parlamentarierseite abrufen kann. Die AJAX-Methode sollte dir einen JSON-String zurückgeben, stelle diesen dann ansprechend auf deinem DOM dar. Am Ende solltest du ein Suchformular haben, das auf Submit die Daten der Parlamentarierseite abruft, und dir alle auf die Suche zutreffenden Einträge zurückliefert und darstellt.
                           </div>
                         </div>
                      </div>
