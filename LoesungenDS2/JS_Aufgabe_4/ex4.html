@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>FDN - Digital Skills</title>
+
+        <script src="ex4.js"></script>
+    </head>
+    <body>
+        <form action="javascript:void(0);" onsubmit="createCouncillor(this)">
+            Stände-/Nationalrat: <input type="text" name="council">
+            Vorname: <input type="text" name="firstName">
+            Nachname: <input type="text" name="lastName">
+            Kanton: <input type="text" name="canton">
+            Partei: <input type="text" name="party">
+            <input type="submit">
+        </form>
+        <button onclick=getRandomEntry()>Zufälliger Eintrag</button>
+        
+        
+        <ul id="councillor-list"></ul>
+         
+    </body>
+</html>
