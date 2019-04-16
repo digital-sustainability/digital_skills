@@ -44,7 +44,7 @@ function logCounter() {
 }
 
 /*
-
+Gibt die angegebene Anzahl Nummern der Fibonacci-Reihe in der Konsole aus
 */
 function printFibonacci(number) {
     
@@ -52,11 +52,14 @@ function printFibonacci(number) {
     
     console.log("first " + number + " fibonacci numbers:");
     
+    // Schleife wird sooft ausgeführt, wie die Nummer, die als Parameter eingegeben wurde und gibt jeweils die Fibonacci zahl an dieser Stelle aus
     while (int <= number) {
+        
         var fib = calcFib(int);
         
         console.log(fib);
-        int++;
+        
+        int++; // wichtig für die while-Schleife! den Zähler nach jedem Loop inkrementieren
     }
 }
 
