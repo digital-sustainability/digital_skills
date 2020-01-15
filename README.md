@@ -1,4 +1,6 @@
 # Digital Skills Hackroom
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdigital-sustainability%2Fdigital_skills.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdigital-sustainability%2Fdigital_skills?ref=badge_shield)
+
 
 + Installiere [Brackets](http://brackets.io/)
 + Lade den [ZIP](https://github.com/digital-sustainability/digital_skills/archive/master.zip) Ordner herunter und entpacke ihn auf deinem Computer.
@@ -37,3 +39,7 @@
 + [Themes herunterladen (Creative Market)](https://creativemarket.com/themes/bootstrap?utm_source=CMblog&utm_medium=link&utm_campaign=BootstrapHowTo)
 
 + [Anleitung zum Download und Benutzung](https://creativemarket.com/blog/getting-started-with-your-new-bootstrap-theme)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdigital-sustainability%2Fdigital_skills.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdigital-sustainability%2Fdigital_skills?ref=badge_large)
